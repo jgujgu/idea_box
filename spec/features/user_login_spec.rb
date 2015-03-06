@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "the user authentication feature", type: :feature do
   let(:valid_user) { User.create(username: "Sunshine", password: "unicorn5") }
 
-    it "allows a valid user to log in" do
+    xit "allows a valid user to log in" do
       valid_user
       visit login_path
       fill_in("arbitrary_session_username", with: "Sunshine")
